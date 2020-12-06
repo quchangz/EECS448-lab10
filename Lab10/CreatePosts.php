@@ -8,7 +8,7 @@ if ($mysqli->connect_errno) {
 
 $user = $_POST["id"];
 $posts = $_POST["posts"];
-$data = "SELECT user_id FROM users WHERE user_id='$user';";
+$data = "SELECT user_id FROM users WHERE user_id='$user'";
 $flag = false;
 
 if($result = $mysqli->query($data))
@@ -29,7 +29,7 @@ else
 
 if ($flag == true)
 {
-        $sql = "INSERT INTO post(content, author_id) VALUES ('$posts', '$user');";
+        $sql = "INSERT INTO post(content, author_id) VALUES ('$posts', '$user')";
         $query = $mysqli->query($sql);
         if ($query)
         {
