@@ -34,12 +34,12 @@ if ($flag == true)
         $query = $mysqli->query($sql);
         if ($query)
         {
-            echo "Post created<br>";
+            echo "Posted<br>";
             echo "<a href='AdminHome.html'>Back to Admin Home </a>";
         }
         else
         {
-            echo "Error occurred.<br>";
+            echo "Error<br>";
             echo "<a href='AdminHome.html'>Back to Admin Home </a>";
         }  
 }
