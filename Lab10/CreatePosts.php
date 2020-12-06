@@ -40,8 +40,7 @@ if ($flag == true)
         {
             echo "Error occurred.<br>";
             echo "<a href='AdminHome.html'>Back to Admin Home </a>";
-        }
-        
+        }  
 }
 
 $mysqli->close();
