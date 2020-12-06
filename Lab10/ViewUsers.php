@@ -28,7 +28,6 @@ else
     echo "<a href='AdminHome.html'>Back to Admin Home </a>";
 }
 
-
 $result->free();
 
 $mysqli->close();
