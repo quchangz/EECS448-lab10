@@ -1,7 +1,7 @@
 <?php
 $mysqli = new mysqli("mysql.eecs.ku.edu", "quchanzhang", "nech7eji", "quchanzhang");
 
-/* check connection */
+
 if ($mysqli->connect_errno) 
 {
     printf("Connect failed: %s\n", $mysqli->connect_error);
@@ -22,6 +22,5 @@ $sql = "INSERT INTO users (user_id) VALUES ('$user');";
 
     echo "<br><a href='AdminHome.html'>Back to Admin Home </a>";
   
-/* close connection */
 $mysqli->close();
 ?>
