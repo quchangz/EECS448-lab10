@@ -12,11 +12,11 @@ $sql = "INSERT INTO users (user_id) VALUES ('$user');";
 
     if ($mysqli->query($sql) === TRUE)
     {
-      echo "<p>User created successfully</p>";
+      echo "<h4>User created successfully</h4>";
     }
     else
     {
-      echo "<p>User not created or user already exists</p>";
+      echo "<h4>User not created or user already exists</h4>";
     } 
 
     echo "<br><a href='AdminHome.html'>Back to Admin Home </a>";
