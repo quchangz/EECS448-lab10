@@ -24,7 +24,7 @@ if($result = $mysqli->query($data))
 }
 else
 {
-    echo "Error, user not found<br>";
+    echo "User not found<br>";
     echo "<a href='AdminHome.html'>Back to Admin Home </a>";
 }
 
